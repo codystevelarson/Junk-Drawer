@@ -1,0 +1,47 @@
+﻿@model List<PowerBallWebApp.Models.Ticket>
+
+@{
+    ViewBag.Title = "Confrimation";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            @if (Model.Count() > 1)
+            {
+                <h1>You Created @Model.Count() Tickets</h1>
+            }
+            else
+            {
+                <h1>You Created a Ticket</h1>
+            }
+        </div>
+
+    </div>
+    <div class="row">
+
+            <table class="table-striped table-hover col-sm-12">
+                <thead>
+                    <tr>
+                        <th>Ticket ID</th>
+                        <th>Name</th>
+                        <th>Numbers</th>
+                        <th>Powerball</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var ticket in Model)
+                    {
+                        <tr>
+                            <td>@ticket.ID</td>
+                            <td>@ticket.FirstName  @ticket.LastName</td>
+                            <td>@ticket.Numbers[0],@ticket.Numbers[1],@ticket.Numbers[2],@ticket.Numbers[3],@ticket.Numbers[4]</td>
+                            <td><span class="text-danger">@ticket.PowerBall</span></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+    </div>
+
+</div>

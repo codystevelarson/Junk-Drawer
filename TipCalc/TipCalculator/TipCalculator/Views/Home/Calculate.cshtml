@@ -1,0 +1,28 @@
+﻿@model TipCalculator.Models.TipCalc
+
+@{
+    ViewBag.Title = "Calculate";
+}
+
+
+<h2>Calculate</h2>
+
+<div class="row">
+    <h3>Bill: $@Model.Bill</h3>
+</div>
+<div class="row">
+    <h3>Tip: @Model.Tip%</h3>
+</div>
+<div class="row">
+    <h3>Your Tip: $@Model.TipTotal</h3>
+</div>
+<div class="row">
+    <h3>Total: $@Model.Total</h3>
+</div>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+    <div class="col-sm-12">
+        <button type="submit" class="btn btn-block btn-primary">Start Over</button>
+    </div>
+}

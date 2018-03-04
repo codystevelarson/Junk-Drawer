@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MageHoarder.BLL", "MageHoarder.BLL\MageHoarder.BLL.csproj", "{CDD1C771-6899-483D-8A47-13DC30287474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MageHoarder.Test", "MageHoarder.Test\MageHoarder.Test.csproj", "{BC29517C-534F-4756-A6A9-9D0FDA3017CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDD1C771-6899-483D-8A47-13DC30287474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD1C771-6899-483D-8A47-13DC30287474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD1C771-6899-483D-8A47-13DC30287474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD1C771-6899-483D-8A47-13DC30287474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC29517C-534F-4756-A6A9-9D0FDA3017CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC29517C-534F-4756-A6A9-9D0FDA3017CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC29517C-534F-4756-A6A9-9D0FDA3017CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC29517C-534F-4756-A6A9-9D0FDA3017CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F12360A-6E94-4000-B1B2-108BBB894E3D}
+	EndGlobalSection
+EndGlobal

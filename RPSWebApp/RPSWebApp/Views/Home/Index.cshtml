@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Rock, Paper, Scissors";
+}
+<div class="row" id="headerText">
+    <h2>Rock Paper Scissors</h2>
+</div>
+@using (Html.BeginForm("Play", "Home", FormMethod.Post))
+{
+    <div class="row">
+        <form class="form-horizontal">
+            <div class="form-group col-sm-12">
+                <button type="submit" class="btn btn-primary col-sm-4" name="choice" value="rock">ROCK</button>
+                <button type="submit" class="btn btn-default col-sm-4" name="choice" value="paper">PAPER</button>
+                <button type="submit" class="btn btn-success col-sm-4" name="choice" value="scissors">SCISSORS</button>
+            </div>
+        </form>
+    </div>
+}
+

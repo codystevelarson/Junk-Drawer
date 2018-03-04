@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+
+    <title>Contact List</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Application</h1>
+        <hr/>
+        <ul class="list-group" id="errorMessages"></ul>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="contactTableDiv">
+                    <h2>My Contacts</h2>
+
+                    <table id="contactTable" class="table table-hover">
+                        <tr>
+                            <th width="40%">Company Name</th>
+                            <th width="30%">Company</th>
+                            <th width="15%"></th>
+                            <th width="15%"></th>
+                        </tr>
+
+                        <tbody id="contentRows"></tbody>
+                    </table>
+                </div>
+
+                <div id="editFormDiv" style="display:none">
+                    <h2>Edit Contact</h2>
+
+                    <form class="form-horizontal" role="form" id="edit-form">
+                        <div class="form-group row">
+                            <lable for="edit-first-name" class="col-md-4 control-lable">
+                                First Name:
+                            </lable>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" id="edit-first-name" placeholder="First Name" required/>
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <lable for="edit-last-name" class="col-md-4 control-lable">
+                                Last Name:
+                            </lable>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" id="edit-last-name" placeholder="Last Name" required/>
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <lable for="edit-company" class="col-md-4 control-lable">
+                                Company:
+                            </lable>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" id="edit-company" placeholder="Company" />
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <lable for="edit-email" class="col-md-4 control-lable">
+                                Email:
+                            </lable>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" id="edit-email" placeholder="Email" required/>
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <lable for="edit-phone" class="col-md-4 control-lable">
+                                Phone:
+                            </lable>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control" id="edit-phone" placeholder="Phone Number" />
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <div class="offset-md-4 col-md-4">
+                                <input type="hidden" id="edit-contact-id">
+                                <button type="button" id="edit-cancel-button" class="btn btn-default" onclick="hideEditForm()">Cancel</button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" id="edit-button" class="btn btn-default">Update Contact</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h2>Add New Contact</h2>
+
+                <form class="form-horizontal" role="form" id="add-form">
+                    
+                    <!--First Name-->
+                    <div class="form-group row">
+                        <lable for="add-first-name" class="col-md-4 control-lable">
+                            First Name:
+                        </lable>
+
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="add-first-name" placeholder="First Name" required/>
+                        </div>
+                    </div>
+                    
+                    <!--Last Name-->
+                    <div class="form-group row">
+                        <lable for="add-last-name" class="col-md-4 control-lable">
+                            Last Name:
+                        </lable>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="add-last-name" placeholder="Last Name" required/>
+                        </div>
+                    </div>
+
+                    <!--Company-->
+                    <div class="form-group row">
+                        <lable for="add-company" class="col-md-4 control-lable">
+                            Company:
+                        </lable>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="add-company" placeholder="Company" />
+                        </div>
+                    </div>
+
+                    <!--Email-->
+                    <div class="form-group row">
+                        <lable for="add-email" class="col-md-4 control-lable">
+                            Email:
+                        </lable>
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" id="add-email" placeholder="Email" required/>
+                        </div>
+                    </div>
+
+                    <!--Phone-->                    
+                    <div class="form-group row">
+                        <lable for="add-phone" class="col-md-4 control-lable">
+                            Phone:
+                        </lable>
+                        <div class="col-md-8">
+                            <input type="tel" class="form-control" id="add-phone" placeholder="Phone Number" />
+                        </div>
+                    </div>
+
+                    <!--Create Contact Button-->
+                    <div class="form-group row">
+                        <div class="offset-md-4 col-md-8">
+                            <button type="button" id="add-button" class="btn btn-default ">Create Contact</button>
+                        </div>
+                    </div>
+
+
+                </form>
+
+            </div>
+
+            <script src="js/jquery-2.2.4.min.js"></script>
+            <script src="js/bootstrap.js"></script>
+            <script src="js/home.js"></script>
+</body>
+
+</html>

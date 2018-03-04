@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Powerball", "Powerball\Powerball.csproj", "{71C746BB-0A7D-4701-905E-4DCA4138C9DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Powerball.Tests", "Powerball.Tests\Powerball.Tests.csproj", "{C67D9812-5DE7-4D81-9B40-A84EF5FE49CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71C746BB-0A7D-4701-905E-4DCA4138C9DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71C746BB-0A7D-4701-905E-4DCA4138C9DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71C746BB-0A7D-4701-905E-4DCA4138C9DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71C746BB-0A7D-4701-905E-4DCA4138C9DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67D9812-5DE7-4D81-9B40-A84EF5FE49CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67D9812-5DE7-4D81-9B40-A84EF5FE49CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67D9812-5DE7-4D81-9B40-A84EF5FE49CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67D9812-5DE7-4D81-9B40-A84EF5FE49CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE8734C7-E27B-424C-A248-757DB4D06B3B}
+	EndGlobalSection
+EndGlobal

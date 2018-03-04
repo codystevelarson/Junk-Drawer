@@ -1,0 +1,79 @@
+﻿@model PowerBallWebApp.Models.Ticket
+
+@{
+    /**/
+
+    ViewBag.Title = "Create Ticket";
+}
+
+<h3>Ticket Creator:</h3>
+
+@using (Html.BeginForm("Create", "Home", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+    <div class="row">
+        <div class="col-sm-6">
+            <label for="FirstName">First Name:</label>
+            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+            <span class="text-danger">@Html.ValidationMessageFor(m => m.FirstName)</span>
+        </div>
+
+        <div class="col-sm-6">
+            <label for="LastName">Last Name:</label>
+            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+            <span class="text-danger">@Html.ValidationMessageFor(m => m.LastName)</span>
+
+            <hr />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Ticket Numbers:</h2>
+            <hr />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <label for="Numbers_0_">1</label>
+            @Html.TextBoxFor(m => m.Numbers[0], new { @class = "form-control pbNumber" })
+            <span class="text-danger">@Html.ValidationMessageFor(m => m.Numbers[0])</span>
+
+        </div>
+        <div class="col-sm-2">
+            <label for="Numbers_1_">2</label>
+            @Html.TextBoxFor(m => m.Numbers[1], new { @class = "form-control pbNumber" })
+            <span class="text-danger">@Html.ValidationMessageFor(m => m.Numbers[1])</span>
+
+        </div>
+        <div class="col-sm-2">
+            <label for="Numbers_2_">3</label>
+            @Html.TextBoxFor(m => m.Numbers[2], new { @class = "form-control pbNumber" })
+            <span class="text-danger">@Html.ValidationMessageFor(m => m.Numbers[2])</span>
+        </div>
+        <div class="col-sm-2">
+            <label for="Numbers_3_">4</label>
+            @Html.TextBoxFor(m => m.Numbers[3], new { @class = "form-control pbNumber" })
+            <span class="text-danger">@Html.ValidationMessageFor(m => m.Numbers[3])</span>
+        </div>
+        <div class="col-sm-2">
+            <label for="Numbers_4_">5</label>
+            @Html.TextBoxFor(m => m.Numbers[4], new { @class = "form-control pbNumber" })
+            <span class="text-danger">@Html.ValidationMessageFor(m => m.Numbers[4])</span>
+        </div>
+        <div class="col-sm-2">
+            <label for="PowerBall" class="text-danger">PB</label>
+            @Html.TextBoxFor(m => m.PowerBall, new { @class = "form-control pbNumber" })
+            <span class="text-danger">@Html.ValidationMessageFor(m => m.PowerBall)</span>
+            <hr />
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <button type="submit" class="btn btn-block btn-primary">Sumbit Ticket</button>
+        </div>
+    </div>
+
+}

@@ -1,0 +1,13 @@
+﻿@model PowerBallWebApp.Models.Ticket
+
+@{
+    ViewBag.Title = "DisplayTicket";
+}
+
+<div class="container">
+    <h2>Ticket Lookup</h2>
+    <p>Ticket ID: @Model.ID</p>
+    <p>Name: @Model.FirstName  @Model.LastName</p>
+    <p>Numbers: @Model.Numbers[0],@Model.Numbers[1],@Model.Numbers[2],@Model.Numbers[3],@Model.Numbers[4], <span class="text-danger">@Model.PowerBall</span></p>
+</div>
+

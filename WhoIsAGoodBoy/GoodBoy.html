@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+       <title>Who's a good boy?!</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+       <style>
+           
+           #playAgain{
+               margin-left: 500px;
+           }
+       </style>
+   </head>
+   <body>
+       <div class="container">
+           <div class="row">
+                   <h1 class="col-xs-6">Who's a good boy?!</h1>
+           </div>
+           <div class="row">
+                   <h3 class="col-xs-6">Pick a puppy. If the puppy is a good boy you win!</h3>
+           </div>
+           <div class ="row">
+                   <div>
+                       <img id="shell1" class="col-xs-4">
+                   </div>
+                   <div>
+                       <img id="shell2" class="col-xs-4">
+                   </div>
+                   <div>
+                       <img id="shell3" class="col-xs-4">
+                   </div>
+               </div>
+           <div id="winner" class="row"  style="display:none; color: green">
+               <h1 class="col-md-6">You found the good boy!</h1>
+           </div>
+           <div id="loser" class="row"  style="display:none; color: red">
+                   <h1 class="col-md-6">You picked a bad boy!</h1>
+               </div>
+       </div>
+       <div id="playAgain" class="row" style="display: none">
+           <button type="button" class="btn btn-primary col-md-6">Play again?</button>
+       </div>
+       <script src="js/jquery-2.2.4.min.js"></script>
+       <script src="js/game.js"></script>
+   </body>
+</html>
